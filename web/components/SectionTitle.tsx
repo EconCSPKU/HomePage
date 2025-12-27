@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 interface SectionTitleProps {
   children: React.ReactNode;
-  subtitle?: string;
+  subtitle?: boolean;
   className?: string;
 }
 
