@@ -65,6 +65,8 @@ The website content is data-driven and separated from the UI logic. You can upda
 
 ## 📦 Build & Deployment
 
+### Standard Build
+
 To build the application for production:
 
 ```bash
@@ -73,3 +75,78 @@ npm run build
 ```
 
 This project is optimized for deployment on [Vercel](https://vercel.com/) or any platform that supports Next.js.
+
+### Deployment on Ubuntu Server (PM2 + Nginx)
+
+For self-hosted Ubuntu servers, we recommend using PM2 for process management and Nginx as a reverse proxy.
+
+#### 1. Prerequisites
+
+Ensure Node.js (v18+), npm, PM2, and Nginx are installed on your server.
+
+```bash
+# Install Node.js (example using nvm)
+nvm install 18
+
+# Install PM2 globally
+npm install -g pm2
+
+# Install Nginx
+sudo apt update
+sudo apt install nginx
+```
+
+#### 2. Build and Start with PM2
+
+Navigate to the `web` directory, build the project, and start it.
+
+```bash
+cd web
+npm install
+npm run build
+
+# Start the application using PM2
+pm2 start npm --name "econcs-site" -- start
+```
+
+Save the PM2 process list so it restarts on reboot:
+
+```bash
+pm2 save
+pm2 startup
+```
+
+#### 3. Configure Nginx
+
+Create a new Nginx configuration file:
+
+```bash
+sudo nano /etc/nginx/sites-available/econcs-site
+```
+
+Add the following configuration (replace `your_domain.com` with your actual domain):
+
+```nginx
+server {
+    listen 80;
+    server_name your_domain.com;
+
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+```
+
+Enable the site and restart Nginx:
+
+```bash
+sudo ln -s /etc/nginx/sites-available/econcs-site /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl restart nginx
+```
+
