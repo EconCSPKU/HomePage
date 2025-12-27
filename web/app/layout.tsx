@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "PKU EconCS Lab | Elicit Info",
-  description: "The Elicitation Lab at Peking University, led by Yuqing Kong.",
+  description: "The EconCS Lab at Peking University, led by Yuqing Kong.",
 };
 
 export default function RootLayout({

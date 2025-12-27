@@ -14,7 +14,7 @@ export const PUBLICATIONS: Publication[] = [
   {
     id: "ec-2025-robust",
     title: "Algorithmic Robust Forecast Aggregation",
-    authors: "Elicit Lab et al.",
+    authors: "EconCS Lab et al.",
     conference: "EC 2025",
     year: 2025,
     tags: ["Robust Aggregation", "Forecasting"],
@@ -23,7 +23,7 @@ export const PUBLICATIONS: Publication[] = [
   {
     id: "iclr-2025-llm",
     title: "Benchmarking LLMs' Judgments with No Gold Standard",
-    authors: "Elicit Lab et al.",
+    authors: "EconCS Lab et al.",
     conference: "ICLR 2025",
     year: 2025,
     tags: ["LLM", "Benchmarking"],
@@ -32,7 +32,7 @@ export const PUBLICATIONS: Publication[] = [
   {
     id: "www-2025-robust",
     title: "Robust Aggregation against Adversarial Experts & Mitigating Participation Bias",
-    authors: "Elicit Lab et al.",
+    authors: "EconCS Lab et al.",
     conference: "WWW 2025",
     year: 2025,
     tags: ["Robust Aggregation"]
@@ -50,7 +50,7 @@ export const PUBLICATIONS: Publication[] = [
   {
     id: "ec-2024-baserate",
     title: "Benefits of Base Rate Neglect in Robust Aggregation",
-    authors: "Elicit Lab et al.",
+    authors: "EconCS Lab et al.",
     conference: "EC 2024",
     year: 2024,
     tags: ["Robust Aggregation"]
@@ -58,7 +58,7 @@ export const PUBLICATIONS: Publication[] = [
   {
     id: "ec-2024-text",
     title: "Eliciting Informative Textual Evaluations with LLMs",
-    authors: "Elicit Lab et al.",
+    authors: "EconCS Lab et al.",
     conference: "EC 2024",
     year: 2024,
     tags: ["Information Elicitation", "LLM"]
@@ -67,7 +67,7 @@ export const PUBLICATIONS: Publication[] = [
   {
     id: "neurips-2023-thinking",
     title: "Eliciting Thinking Hierarchy without Priors",
-    authors: "Elicit Lab et al.",
+    authors: "EconCS Lab et al.",
     conference: "NeurIPS 2023",
     year: 2023,
     tags: ["Information Elicitation"]
@@ -75,7 +75,7 @@ export const PUBLICATIONS: Publication[] = [
   {
     id: "neurips-2022-peer-review",
     title: "Signal Calibration in Peer Review",
-    authors: "Elicit Lab et al.",
+    authors: "EconCS Lab et al.",
     conference: "NeurIPS 2022",
     year: 2022,
     tags: ["Peer Review"]
@@ -83,7 +83,7 @@ export const PUBLICATIONS: Publication[] = [
   {
     id: "itcs-2023-consensus",
     title: "False Consensus Effect, Information Theory, and Prediction Markets",
-    authors: "Elicit Lab et al.",
+    authors: "EconCS Lab et al.",
     conference: "ITCS 2023",
     year: 2023,
     tags: ["Prediction Markets"]

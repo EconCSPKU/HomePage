@@ -1,6 +1,6 @@
 # PKU EconCS Lab Homepage
 
-This is the source code for the [Elicit Lab](https://elicit.info) homepage, built with Next.js and Tailwind CSS.
+This is the source code for the [EconCS Lab](https://elicit.info) homepage, built with Next.js and Tailwind CSS.
 
 ## Getting Started
 
