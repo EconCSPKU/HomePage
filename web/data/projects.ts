@@ -10,7 +10,7 @@ export const PROJECTS: Project[] = [
   {
     id: "llm-soup",
     title: "LLM海龟汤游戏",
-    description: "基于大语言模型的逻辑推理游戏。在海龟汤（情境推理游戏）中，玩家需要通过询问只能回答「是」、「不是」或「与此无关」的问题，来揭开一个离奇故事背后的真相。",
+    description: "基于大语言模型的逻辑推理游戏。在海龟汤（情境推理游戏）中，玩家需要通过询问只能回答「是」、「不是」的问题，来揭开一个离奇故事背后的真相。",
     link: "https://soup.elicit.info/",
     tags: ["LLM", "Game", "Logic Reasoning"]
   }
