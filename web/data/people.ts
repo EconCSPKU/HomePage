@@ -57,6 +57,7 @@ export const PHD_STUDENTS: Person[] = [
     role: "PhD Student",
     year: "2023",
     image: "https://cfcs.pku.edu.cn/images/content/2023-09/20230921143230646083.png",
+    website: "https://none44353.github.io/",
     interests: ["Algorithmic Game Theory", "Information Aggregation"]
   },
   {
