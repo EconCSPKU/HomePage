@@ -8,8 +8,9 @@ import { cn } from "@/lib/utils";
 const NAV_ITEMS = [
   { label: "About", href: "#about" },
   { label: "Research", href: "#research" },
-  { label: "Publications", href: "#publications" },
+  { label: "Projects", href: "#projects" },
   { label: "People", href: "#people" },
+  { label: "Publications", href: "#publications" },
 ];
 
 export function Navbar() {
