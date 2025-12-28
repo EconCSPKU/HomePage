@@ -6,7 +6,9 @@ export function Footer() {
           <div>
             <h3 className="text-white text-lg font-bold mb-2">PKU EconCS Lab</h3>
             <p className="text-sm">
-              Center on Frontiers of Computing Studies (CFCS)<br />
+              <a href="https://cfcs.pku.edu.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                Center on Frontiers of Computing Studies (CFCS)
+              </a><br />
               Peking University
             </p>
           </div>

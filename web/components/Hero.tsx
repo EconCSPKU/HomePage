@@ -11,10 +11,14 @@ export function Hero() {
         <div className="absolute right-0 bottom-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-indigo-400 opacity-20 blur-[100px]"></div>
       </div>
 
-      <div className="container relative z-10 px-6 text-center">
-        <div className="inline-block px-3 py-1 mb-6 text-sm font-semibold text-blue-600 bg-blue-50 rounded-full border border-blue-100">
+      <div className="container relative z-10 px-6 text-center pt-24 pb-12">
+        <Link 
+          href="https://cfcs.pku.edu.cn/" 
+          target="_blank"
+          className="inline-block px-3 py-1 mb-6 text-sm font-semibold text-blue-600 bg-blue-50 rounded-full border border-blue-100 hover:bg-blue-100 transition-colors"
+        >
           Center on Frontiers of Computing Studies (CFCS) @ PKU
-        </div>
+        </Link>
         
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 mb-6 max-w-4xl mx-auto">
           Eliciting Truth in the <br/>
