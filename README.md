@@ -106,7 +106,7 @@ npm install
 npm run build
 
 # Start the application using PM2
-pm2 start npm --name "homepage" -- start
+pm2 start npm --name "econcs-site" -- start
 ```
 
 Save the PM2 process list so it restarts on reboot:
@@ -129,7 +129,7 @@ Add the following configuration (replace `your_domain.com` with your actual doma
 ```nginx
 server {
     listen 80;
-    server_name elicit.info;
+    server_name your_domain.com;
 
     location / {
         proxy_pass http://localhost:3000;
