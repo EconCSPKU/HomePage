@@ -81,5 +81,15 @@ export const PHD_STUDENTS: Person[] = [
     year: "2025",
     image: "https://cfcs.pku.edu.cn/images/content/2025-09/20250915155240024557.gif",
     interests: ["Computational Economics"]
+  },
+  {
+    name: "Shengwei Xu (许晟伟)",
+    role: "Alumni",
+    year: "2021",
+    image: "https://davidxu999.github.io/images/bio-photo.jpg",
+    website: "https://davidxu999.github.io/",
+    description: "Ph.D. Candidate at University of Michigan. B.S. from PKU (2021).",
+    interests: ["Mechanism Design", "Information Elicitation", "LLMs"],
+    alumni: true
   }
 ];
